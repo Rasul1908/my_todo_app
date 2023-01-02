@@ -3,6 +3,7 @@ import functions
 
 
 todos=functions.get_games()
+st.set_page_config(layout='wide')
 
 def add_todo():
     new_todo=st.session_state['new_todo'] + '\n'
@@ -12,7 +13,7 @@ def add_todo():
 
 st.title('My todos list')
 st.subheader('This is to improve productivity')
-st.write('This is to improve productivity')
+st.write('This is to improve <b>productivity</b>',unsafe_allow_html=True)
 abutton= st.button('Complete')
 
 
