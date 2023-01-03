@@ -9,6 +9,7 @@ def get_games(filepath=FILEPATH):
     return lista_local
 
 
+
 def write_games(lista_local,filepath=FILEPATH):
     with open(filepath, 'w') as file:
         file.writelines(lista_local)
